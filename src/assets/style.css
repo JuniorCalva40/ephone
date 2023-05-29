@@ -1,0 +1,725 @@
+html{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+
+body{
+  background-color: #ffffff;
+  margin: 0 auto;
+  overflow-x:  hidden;
+  max-width: 1500px;
+}
+/*Mesagge erro*/
+.error{
+  padding: 1rem;
+  display: block;
+  background-color: rgb(187, 19, 19);
+  margin: 1rem auto;
+  color: aliceblue;  
+}
+.title-section{
+  padding: 2px 1rem;
+  width: max-content;
+  height: auto;
+  background-color:#DEECF0;
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+  color: #008ECC;
+}
+/*HEADER */
+.header{
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  height: 7rem;
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  
+  
+
+}
+.logo{
+  cursor: pointer;
+  order: 0;
+  width: 8rem;
+  transition: all 1s ease-in-out;
+}
+.logo:hover{
+  transform: scale(1.03);
+}
+
+.loader{
+  margin: 5rem auto;
+}
+/*HEADER MENU*/
+
+.menu{
+  order: 2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+  
+}
+.menu a {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #1E9BD2;
+  text-decoration: none;
+  padding: 8px;
+  transition: all .5s ease-in-out;
+  background-color:#ffffff;
+  border-radius: 5px;
+  border:1px solid transparent;
+}
+.menu a:hover{
+  border:1px solid #1E9BD2;
+  
+  
+
+}
+/*HEADER BUSCADOR*/
+
+.search-form{
+  order: 1;
+  position: relative;
+  padding: 10px;
+}
+.search-form input{
+  padding: 1rem;
+  width: 25rem;
+  height: 1.5rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #deecf0;
+}
+
+.search-form .search-icon{
+  position: absolute;
+  top: 30%;
+  right:1rem;
+  color: #008ECC;
+}
+
+
+
+/*HOME*/
+.home{
+  width: 100%;
+}
+/*Products Card*/
+#products{
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card{
+  color: rgb(0, 0, 0);
+  border-radius: 1rem;
+  width: 15rem;
+  height: auto;
+  gap: 4rem;
+  padding: 1rem;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+  
+}
+.product-card:hover{
+  transform: scale(1.05);
+}
+
+.product-card img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-card .details{
+  color: #8f9090;
+}
+
+
+
+.product-card .button{
+  color: azure;
+  background-color: #008ECC;
+  border-radius: 5px;
+  padding: .5rem;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+}
+
+.product-card .button:hover{
+  font-weight: 600;
+}
+
+/*DETAILS SECTION*/
+.details{
+  margin: 1rem auto;
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+.details-img{
+  width:40%;
+  height: auto;
+  
+}
+
+.details img {
+  width: 100%;
+  height: auto;
+}
+
+.details-des{
+  text-align: justify;
+  padding: 5px;
+  font-weight: 300;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*SLIDER HOME JS*/
+/*RESPONSIVE SLIDER*/
+
+.slider{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  width: 88%;
+ 
+}
+
+.slider-slides{
+  position: relative;
+  height: 400px;
+ 
+}
+
+.slider-slide{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0.9;
+  transition: opacity 1.5s ease-in-out ;
+}
+
+.slider-slide.active{
+  opacity: 1 ;
+  visibility: visible;
+}
+
+.slider-slide img{
+  border-radius: 10px;
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+
+/*BOTONES*/
+
+.slider-btns{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.slider-btns i{
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: rgb(223, 240, 240);
+  color:#00aeff;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 1px 12px white;
+  line-height: 3rem;
+}
+
+
+.prev{
+  margin-left: -1.2rem;
+  position: relative;
+  top: 30%;
+}
+.next{
+  margin-right: -1.2rem;
+}
+
+
+
+
+.slider i:hover{
+  color:#008ECC;
+  background: rgb(249, 244, 244);
+  transform: scale(1.05);
+}
+
+/*HOME CARDS*/
+.home-brands{
+  width: 95%;
+  position: relative;
+}
+
+.home-brands hr{
+  width: 90%;
+  position: absolute;
+  top: 3.25rem;
+  left: 5rem;
+  z-index: -10;
+  height: .1rem;
+  background-color: #e2dede;
+  border: none;
+}
+
+.title-brands{
+  font-size: 1.3rem;
+  border-bottom: 5px solid #008ECC;
+  padding-bottom: 1rem;
+  width: fit-content;
+  margin-left: 4.5rem;
+  
+}
+
+.title-brands span{
+  color: #008ECC;
+}
+
+
+.home-cards{
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row wrap ;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+
+.card-brands {
+  cursor: pointer;
+  width: 25%;
+  border-radius: 1rem;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  overflow: hidden;
+  
+}
+
+.card-sidebar {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: justify;
+  margin-left: 1rem;
+  z-index: 10;
+}
+
+.card-img {
+  width: 7rem; 
+  height: auto; 
+  align-self: center;
+  transition: all .7s ease-in-out;
+  z-index: 10;
+  
+}
+.card-brands:hover .card-img{
+ transform: scale(1.1);
+ 
+}
+
+.card-des{
+  font-weight: bold;
+}
+
+
+.card-logo {
+  width: 80px; 
+  height: auto; 
+  border-radius: 5px;
+}
+
+/*CARD APPLE*/
+.apple{
+  background-color: #313131;
+  color: #ffffff;
+  position: relative;
+}
+
+.apple .card-title {
+  text-align: center;
+  font-size: 1rem;
+  width: 6rem;
+  padding: 3px;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: lighter;
+  background-color: #404040;
+  border-radius: 5px;
+}
+
+.apple::before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  right: -10%;
+  width: 10rem; 
+  height: 10rem; 
+  background-color:#404040; 
+  border-radius: 50%;
+  padding: 1rem;
+  z-index: 0;
+  box-shadow: 0 0 0 5px #313131, 0 0 0 6px #5d5c5c;
+}
+/*CARD REALME*/
+.realme{
+  background-color: #FFF3CC;
+  position: relative;
+}
+
+.realme .card-title {
+  padding: 2px 1px;
+  text-align: center;
+  font-size: 1rem;
+  width: 6rem;
+  padding: 3px;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  background-color: #ede989;
+  border-radius: 5px;
+}
+
+.realme .card-logo{
+  width: 100px;
+  padding: .6rem 0;
+}
+
+.realme::before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  right: -10%;
+  width: 10rem; 
+  height: 10rem; 
+  background-color: #EDE989; 
+  border-radius: 50%;
+  padding: 1rem;
+  z-index: 0;
+  box-shadow: 0 0 0 5px #FFF3CC, 0 0 0 6px #EDE989;
+}
+
+/*CARD XIAOMI*/
+.xioami{
+  background-color: #FFECDF;
+  position: relative;
+}
+
+.xioami .card-title {
+  padding: 2px 1px;
+  text-align: center;
+  font-size: 1rem;
+  width: 6rem;
+  padding: 3px;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  background-color: #FACDAC;
+  border-radius: 5px;
+  
+}
+
+.xioami .card-img{
+  width: 7rem;
+  z-index: 10;
+}
+
+.xioami::before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  right: -10%;
+  width: 10rem; 
+  height: 10rem; 
+  background-color: #FDD0AF; 
+  border-radius: 50%;
+  padding: 1rem;
+  z-index: 0;
+  box-shadow: 0 0 0 5px #FFECDF, 0 0 0 6px #FACDAC;
+}
+
+
+/*HOME CATEGORIES*/
+
+
+.home-categories{
+  width: 90%;
+  position: relative;
+}
+
+.title-categories{
+  font-size: 1.3rem;
+  border-bottom: 5px solid #008ECC;
+  padding-bottom: 1rem;
+  width: fit-content;
+  margin-left: 1.5rem;
+  
+}
+
+.title-categories span{
+  color: #008ECC;
+}
+.home-categories hr{
+  width: 93%;
+  position: absolute;
+  top: 3.25rem;
+  left: 5rem;
+  z-index: -10;
+  height: .1rem;
+  background-color: #e2dede;
+  border: none;
+}
+.categories-products{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  
+}
+
+.category{
+  cursor: pointer;
+}
+
+.image-wrapper{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.category img{
+  width: 7rem;
+  padding-top: 1rem;
+ 
+  
+}
+
+/*FOOTER*/
+.footer{
+  position: relative;
+  background-color: #008ECC;
+  color: white;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 5px;
+  overflow: hidden;
+  
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: -4%;
+  width: 20rem; 
+  height: 20rem; 
+  background-color:#0C9BDA; 
+  border-radius: 50%;
+  padding: 1rem;
+  z-index: 0;
+  box-shadow: 0 0 0 5px #008ECC, 0 0 0 7px #0C9BDA;
+ 
+}
+
+.footer-group{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.footer-side{
+  text-align: start;
+  z-index: 10;
+}
+
+
+.footer-contact p{
+  margin-left: 1rem;
+}
+.footer-app img{
+  width: 8rem;
+  height: auto;
+}
+
+/*FOOTER SIDE 2*/
+.footer-side2{
+  z-index: 10;
+}
+.footer-side2 h2{
+  padding: .5rem;
+  border-bottom: 2px solid white ;
+  
+}
+
+.footer-side2 ul{
+  line-height: 2rem;
+ 
+}
+
+/*FOOTER Final*/
+footer hr{
+  background-color: white;
+  height: 1px;
+  border: none;
+}
+
+.github {
+  width: 5rem;
+  color: #F5F5F5;
+  animation-name: github;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes github {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/*MEDIA QUERYS*/
+/* Estilos para tablets y dispositivos con un ancho mínimo de 768px */
+@media (min-width: 601px) and (max-width: 1023px) {
+  /* Estilos para tablets */
+  /*HOME CARDS Top Electronic Brands*/
+  
+  .home-brands hr{
+    display: none;
+  }
+  .title-brands{
+    margin: 1rem auto;
+    
+  }
+  .card-brands:hover .card-img{
+    transform: translateX(10px);
+    
+   }
+   /*HOME CATEGORIES Shop From Top Categories*/
+   /*Quit Hr*/
+   .home-categories hr{
+    display: none;
+  }
+  .title-categories{
+   margin: 1rem auto;
+    
+  }
+  
+}
+@media (max-width: 600px) {
+  /* Estilos para teléfonos */
+  /*HEADER*/
+  
+  .search-form input{
+    width: 16rem;
+  }
+
+  .menu{
+    position: fixed;
+    bottom: 0;
+    height: 3.2rem;
+    z-index: 100;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #063b6938;
+  }
+  
+  /*SLIDER*/
+  .slider-slide img{
+    object-fit: cover;
+    object-position: 85% 100%;
+  }
+  /*HOME CARDS Top Electronic Brands*/
+  
+  .home-brands hr{
+    display: none;
+  }
+  .title-brands{
+    margin: 1rem auto;
+    
+  }
+  .home-cards{
+    flex-flow: column wrap ; 
+  }
+  .card-brands{
+    width: 100%;
+  }
+  .card-brands:hover .card-img{
+    transform: translateX(5px);
+    
+   }
+
+   /*HOME CATEGORIES Shop From Top Categories*/
+   /*Quit Hr*/
+   .home-categories hr{
+    display: none;
+  }
+  .title-categories{
+   margin: 1rem auto;
+    
+  }
+
+  /*FOOTER*/
+  .footer{
+    padding: 1rem;
+    padding-bottom: 2rem;
+    
+  }
+  .footer-side{
+    padding: 1rem;
+  }
+  .footer-side2{
+    display: none;
+  }
+
+  /*SECTION PRODUCTOS*/
+  .product-card:hover{
+    transform: scale(1);
+  }
+  /*DETAILS SECTION*/
+
+
+.details-img{
+  margin: .5rem auto;
+  width:80%;
+  height: auto;
+  
+}
+}
