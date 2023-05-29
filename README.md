@@ -1,5 +1,5 @@
 ## Ephone
-ePhone is a Single Page Application (SPA) that displays information about technological products. The project utilizes Vanilla JavaScript with modules and is packaged with Webpack for improved organization and performance.
+ePhone is a Single Page Application (SPA) that displays information about technological products. The project is built using Vanilla JavaScript with modules, taking advantage of the modular architecture for better code organization and maintainability. It is packaged with Webpack, which optimizes the project's assets and enhances performance. The application fetches the product data from a WordPress API, ensuring that the information is always up to date and easily manageable. With this integration, ePhone offers a seamless and dynamic user experience while leveraging the flexibility and content management capabilities of WordPress.
 
 ##### Features
 Displaying a list of technological products.
