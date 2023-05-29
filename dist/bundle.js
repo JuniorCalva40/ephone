@@ -116,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Loader: () => (/* binding */ Loader)\n/* harmony export */ });\nfunction Loader() {\r\n  const $loader = document.createElement(\"img\");\r\n  $loader.src = \"../src/assets/loader.svg\";\r\n  $loader.alt =\"Cargando\"\r\n  $loader.classList.add(\"loader\")\r\n  $loader.setAttribute(\"id\", \"loader\");\r\n\r\n  return $loader\r\n}\n\n//# sourceURL=webpack://ephonee/./src/components/loader.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Loader: () => (/* binding */ Loader)\n/* harmony export */ });\nfunction Loader() {\r\n  const $loader = document.createElement(\"img\");\r\n  $loader.src = \"src/assets/loader.svg\";\r\n  $loader.alt =\"Cargando\"\r\n  $loader.classList.add(\"loader\")\r\n  $loader.setAttribute(\"id\", \"loader\");\r\n\r\n  return $loader\r\n}\n\n//# sourceURL=webpack://ephonee/./src/components/loader.js?");
 
 /***/ }),
 
@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Title: () => (/* binding */ Title)\n/* harmony export */ });\n\r\n\r\nfunction Title() {\r\n  const d = document\r\n  \r\n  let $logo = d.createElement(\"img\");\r\n  $logo.classList.add(\"logo\");\r\n  $logo.src = \"../src/assets/logo.png\" \r\n  \r\n  return $logo;\r\n}\n\n//# sourceURL=webpack://ephonee/./src/components/title.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Title: () => (/* binding */ Title)\n/* harmony export */ });\n\r\n\r\nfunction Title() {\r\n  const d = document\r\n  \r\n  let $logo = d.createElement(\"img\");\r\n  $logo.classList.add(\"logo\");\r\n  $logo.src = \"src/assets/logo.png\" \r\n  \r\n  return $logo;\r\n}\n\n//# sourceURL=webpack://ephonee/./src/components/title.js?");
 
 /***/ }),
 

@@ -5,7 +5,7 @@ export function Title() {
   
   let $logo = d.createElement("img");
   $logo.classList.add("logo");
-  $logo.src = "../src/assets/logo.png" 
+  $logo.src = "src/assets/logo.png" 
   
   return $logo;
 }
